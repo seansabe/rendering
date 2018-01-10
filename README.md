@@ -7,7 +7,7 @@ El Dockerfile contiene la máquina virtual con Blender para realizar Batch Rende
 
 docker build -t blender .
 
-3. Se debe contar con un archivo .blend dentro del mismo directorio creado.
+3. Se debe contar con un archivo .blend dentro del mismo directorio creado. 3d y classroom son los ficheros con los .blend ejemplo para renderizar.
 4. El comando para hacer batch rendering es 
 
 docker run --rm -v $(pwd):/media/ \
