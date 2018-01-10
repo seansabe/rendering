@@ -13,9 +13,9 @@ docker build -t blender .
 docker run --rm -v $(pwd):/media/ \
              -u "$(id -u):$(id -g)" \
              eparker05/blender:2.78c \
-             blender -b /media/classroom/classroom.blend -o /media/result/frame_### -f 1
+             blender -b /media/classroom/miarchivo.blend -o /media/frame_### -f 1
              
-Donde $(pwd) es el directorio actual, /media el directorio de la máquina que hace relación al directorio creado en la máquina host, frame_### -f 1 hace referencia el frame 1 del archivo .blend, por lo que si re requiere renderizar otro frame, se debe cambiar el número 1 por el necesario.
+Donde $(pwd) es el directorio actual, /media el directorio de la máquina que hace relación al directorio creado en la máquina host, frame_### -f 1 hace referencia el frame 1 del archivo .blend, por lo que si re requiere renderizar otro frame, se debe cambiar el número 1 por el necesario. /media/frame_### -f 1 es el directorio donde se creará el frame renderizado.
 
 
 Dockerfile2 contiene la máquina virtual con los comandos para aprovicionar Blender y HTCondor.
