@@ -1,0 +1,9 @@
+
+
+
+## Llegar al directorio del proyecto y copiar el comando en la consola ##
+
+docker run --rm -v $(pwd):/media/ \
+             -u "$(id -u):$(id -g)" \
+             eparker05/blender:2.78c \
+             blender -b /media/classroom/classroom.blend -o /media/result/frame_### -f 1
