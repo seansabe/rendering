@@ -18,7 +18,7 @@ docker run --rm -v $(pwd):/media/ \
 Donde $(pwd) es el directorio actual, /media el directorio de la máquina que hace relación al directorio creado en la máquina host, frame_### -f 1 hace referencia el frame 1 del archivo .blend, por lo que si re requiere renderizar otro frame, se debe cambiar el número 1 por el necesario. /media/frame_### -f 1 es el directorio donde se creará el frame renderizado.
 
 
-Dockerfile2 contiene la máquina virtual con los comandos para aprovicionar Blender y HTCondor.
+Dockerfile2 contiene la máquina virtual con los comandos para aprovicionar Blender y HTCondor. (Remover el 2 del nombre)
 
 1. Crear un directorio en el equipo host.
 2. Llegar al directorio por consola y ejecutar el comando
